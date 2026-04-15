@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vocal Tech Marketing Portal</title>
+    <style>
+        body { background: #333; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: #3d3d3d; padding: 30px; border-radius: 10px; width: 350px; border-top: 5px solid #548888; text-align: center; }
+        h2 { color: #548888; margin-bottom: 20px; }
+        input { width: 100%; padding: 12px; margin: 10px 0; background: #2b2b2b; border: 1px solid #555; color: white; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; padding: 15px; background: #548888; border: none; color: white; font-weight: bold; cursor: pointer; border-radius: 5px; margin-top: 10px; }
+        .result { margin-top: 20px; padding: 15px; background: #2b2b2b; border-radius: 5px; font-size: 1.5rem; }
+        .status { font-size: 0.8rem; color: #888; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>VOCAL TECH</h2>
+        <input type="text" id="phone" placeholder="Customer Phone">
+        <input type="text" id="zip" placeholder="Zip Code">
+        <button onclick="getDynamicDID()">GENERATE DID</button>
+        <div class="result" id="displayDID">---</div>
+        <div class="status" id="statusMessage">Ready...</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
